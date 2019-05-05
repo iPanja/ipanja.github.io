@@ -1,0 +1,10 @@
+Package: com.ipanja.tachankadenied
+Name: TachankaDenied
+Depends: mobilesubstrate
+Version: 2.0.0
+Architecture: iphoneos-arm
+Description: When an incorrect password is entered Lord Tachanka will protect your device.
+Maintainer: Fletcher Henneman
+Author: Fletcher Henneman
+Section: Tweaks
+Depiction: https://ipanja.github.io/repo/depictions/?p=com.ipanja.techankadenied

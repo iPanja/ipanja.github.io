@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Tachanka Denied</string>
+			<key>icon</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.panjaco.tachankadeniedpreferences</string>
+			<key>key</key>
+			<string>isEnabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.panjaco.tachankadeniedpreferences</string>
+			<key>key</key>
+			<string>isAudioEnabled</string>
+			<key>label</key>
+			<string>Audio</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>defaults</key>
+			<string>com.panjaco.tachankadeniedpreferences</string>
+			<key>default</key>
+			<integer>3</integer>
+			<key>min</key>
+			<integer>1</integer>
+			<key>max</key>
+			<integer>10</integer>
+			<key>showValue</key>
+			<true/>
+			<key>isSegmented</key>
+			<true/>
+			<key>segmentCount</key>
+			<integer>9</integer>
+			<key>key</key>
+			<string>duration</string>
+			<key>label</key>
+			<string>Duration</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Tachanka Denied</string>
+</dict>
+</plist>

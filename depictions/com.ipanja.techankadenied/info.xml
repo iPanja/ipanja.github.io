@@ -1,0 +1,46 @@
+<package>
+	<id>com.ipanja.techankadenied</id>
+	<name>Techanka Denied</name>
+	<version>2.0.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>7.0</miniOS>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>mobilesubstrate</package>
+	</dependencies>
+	<shortDescription>"LMG, Mounted and Loaded!"</shortDescription>
+	<descriptionlist>
+		<description>Blasts a techanka audio file as well as splashing his beautiful face across your screen!</description>
+		<description>Created by iPanja (Fletcher)</description>
+		<description><![CDATA[
+		You can also have<br/>
+		a multi-line item.
+		]]>
+		</description>
+	</descriptionlist>
+	<screenshots>
+		<screenshot>
+			<description>This is a description for screenshot 1. It's Cydia!</description>
+			<image>cydia.jpg</image>
+		</screenshot>
+		<screenshot>
+			<description>This is a description for screenshot 2. It's another Cydia!</description>
+			<image>cydia.jpg</image>
+		</screenshot>
+	</screenshots>
+	<changelog>
+		<change>Initial Release</change>
+		<change>Added audio</change>
+		<change>Fixed image size/location</change>
+		<change>Added preference panel</change>
+	</changelog>
+	<links>
+		<link>
+			<name>/r/jailbreak</name>
+			<url>https://www.reddit.com/r/jailbreak</url>
+			<iconclass>fa fa-reddit</iconclass>
+		</link>
+	</links>
+</package>

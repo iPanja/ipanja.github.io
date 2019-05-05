@@ -1,0 +1,16 @@
+<changelog>
+	<changes>
+		<version>2.0</version>
+		<change>Third release</change>
+		<change>Added a preferences panel</change>
+		<change>Fixed the location of the image</change>
+	<changes>
+		<version>1.5</version>
+		<change>Second release</change>
+		<change>Added audio playing</change>
+	</changes>
+	<changes>
+		<version>1.0.0-1</version>
+		<change>Initial Release</change>
+	</changes>
+</changelog>
