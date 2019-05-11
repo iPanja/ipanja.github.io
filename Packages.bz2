@@ -11,7 +11,7 @@ SHA1: cfb7ff5d6cda7b0a45f5504d225f5a74432c74a9
 SHA256: c656a5b637d0a6aa1162d6d8fe724b814dfc580707f93753850d8482395fc4f5
 Section: Tweaks
 Description: When an incorrect password is entered Lord Tachanka will protect your device.
-Depiction: https://ipanja.github.io/ipanja/depictions/?p=com.panjaco.tachankadenied
+Depiction: https://ipanja.github.io/depictions/?p=com.ipanja.techankadenied
 Author: Fletcher Henneman
 Name: TachankaDenied
 
