@@ -1,0 +1,29 @@
+{
+    "merchants": [
+        {
+            "name": "Woodsman Wilber",
+            "slots": [
+                "Redwood"
+            ]
+        },
+        {
+            "name": "Miner Mike",
+            "slots": [
+                "Diamond Shard"
+            ]
+        },
+        {
+            "name": "Armorer Amaranth",
+            "slots": [
+                "Steel Sword",
+                "Chainmail Armor"
+            ]
+        },
+        {
+            "name": "Witch Wendy",
+            "slots": [
+                "Epic Potion"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,297 @@
+/* [Custom Variables] */
+/* background-color: var(--dark-blue); */
+@font-face{
+	font-family: "Roboto";
+	src: url("fonts/Roboto-Regular.ttf");
+}
+@font-face{
+	font-family: "Roboto";
+	src: url("fonts/Roboto-Bold.ttf");
+	font-weight: bold;
+}
+@font-face{
+	font-family: "Roboto";
+	src: url("fonts/Roboto-Light.ttf");
+	font-weight: lighter;
+}
+@@font-face {
+	font-family: "Roboto";
+	src: url("fonts/Roboto-Italic.ttf");
+	font-style: italic;
+}
+@@font-face {
+	font-family: "Roboto";
+	src: url("fonts/Roboto-BoldItalic.ttf");
+	font-weight: bold;
+	font-style: italic;
+}
+:root{
+	--dark-blue: #1E1F27;
+	--pink: #e44c65;
+	--white: #ffffff;
+	--gray: #272833;
+	--text-gray: rgba(255, 255, 255, 0.75);
+	--yellow: yellow
+}
+[data-theme="light"] {
+	--dark-blue: #eee;
+	--pink: #e44c65;
+	--white: #1E1F27;
+	--gray: white;
+	--text-gray: black;
+	--yellow: #8d9000;
+}
+/* [Reset] */
+body{
+	font-family: "Roboto", Helvetica, sans-serif;
+	background-color: var(--dark-blue);
+	color: var(--white);
+	margin: 0;
+}
+/*
+	[Slider Switch]
+*/
+.theme-switch-wrapper {
+	display: flex;
+	align-items: center;
+	float: right;
+}
+.theme-switch-wrapper p{
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+.theme-switch {
+	display: inline-block;
+	height: 26px;
+	position: relative;
+	width: 50px;
+}
+
+.theme-switch input {
+	display:none;
+}
+
+.slider {
+	background-color: #ccc;
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: .4s;
+}
+
+.slider:before {
+	background-color: #fff;
+	bottom: 2px;
+	content: "";
+	height: 22px;
+	left: 2px;
+	position: absolute;
+	transition: .4s;
+	width: 22px;
+}
+
+input:checked + .slider {
+    background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+	transform: translateX(22px);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+/* [Navigation] */
+#nav{
+	overflow: hidden;
+	background-color: var(--dark-blue);
+}
+#nav a{
+	display: block;
+	float: left;
+	color: var(--white);
+	text-decoration: none;
+	padding: 14px 16px;
+	text-align: center;
+	font-size: 15px;
+}
+#nav a:hover{
+	text-decoration: underline;
+	background-color: var(--gray);
+}
+#nav a.right{
+	float: right;
+}
+#nav a.active{
+	background-color: var(--pink);
+	color: var(--white);
+}
+#nav .icon{
+	display: none;
+}
+@media screen and (max-width: 600px){ /* When hidden */
+	#nav a:not(:first-child){
+		display: none;
+	}
+	#nav.rnav .theme-switch-wrapper{
+		display: none;
+	}
+	#nav a.icon{
+		float: right;
+		display: block;
+	}
+}
+@media screen and (max-width: 600px){ /* When visible */
+	#nav.responsive{
+		position: relative;
+	}
+	#nav.responsive .icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	#nav.responsive a{
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	#nav.responsive .theme-switch-wrapper{
+		display: flex;
+		float: left;
+		padding: 0 16px;
+	}
+}
+/*
+	[General Stuff]
+*/
+header.major{
+	margin: 0 0 1em 0;
+}
+header.major a:hover{
+	color: var(--pink);
+}
+header.major a i{
+	font-size: 1.75em;
+}
+header.major::after{ /* Large section headers */
+	background-color: var(--pink);
+	content: '';
+	display: inline-block;
+	height: 0.2em;
+	max-width: 20em;
+	width: 75%;
+}
+header.major h1, h2, h3, h4, h5, h6{
+	margin-bottom: 0;
+}
+.wrapper{ /* Creates the darker margin around the resume */
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 2em 2em 4em 2em;
+}
+.container{
+	max-width: 700px;
+	padding: 1em 1em;
+	background-color: var(--gray);
+}
+span.separator{
+	padding: 0 20px;
+}
+div.div-space > section{
+	margin-bottom: 50px;
+}
+.resume section > h3{
+	color: var(--pink);
+	letter-spacing: 0.1em;
+	font-size: 16px;
+}
+.resume a{
+	color: var(--white);
+	text-decoration: none;
+}
+.resume a.underline{
+	border-bottom: 1px dotted var(--pink);
+}
+.resume a:hover{
+	border-bottom: 1px solid var(--pink);
+	color: var(--pink);
+}
+/*
+	[Contact]
+*/
+section#contact div#contact-info{
+	width: 100%;
+	display: flex;
+}
+section#contact div#contact-info i{
+	font-size: 1.4em;
+}
+section#contact div#contact-info span{
+	font-size: 18px;
+}
+section#contact div#contact-info p{
+	font-size: 16px;
+	margin: 2px 0 0 0;
+}
+/*
+	[Experiences]
+*/
+.experiences > div:not(:last-of-type){
+	margin-bottom: 40px;
+}
+.experience > div:last-of-type p{
+	max-width: 750px;
+}
+.experience{
+	line-height: 14px;
+}
+.experience header > h3{
+	display: inline-block;
+}
+.experience header span{
+	margin-left: 0px;
+}
+.experience div h3{
+	font-size: 16px;
+}
+.experience div p, li{
+	font-size: 14px;
+}
+.experience li{
+	line-height: 16px;
+	margin: 4px 0px;
+}
+.experience i.fa-trophy{
+	color: var(--yellow);
+}
+.experience ul > ul{ /* Sub bullet points */
+	padding-left: 20px;
+}
+/*
+	[Project]
+*/
+.project img{
+	height: 75px;
+	width: 75px;
+	float: left;
+	margin-right: 20px;
+}
+.project div.header-icon{
+	margin-top: 16px;
+}
+.project div.header-icon h3{
+	float: left;
+	margin-top: 0;
+}
+.project div.header-icon a{
+	margin-left: 6px;
+}
