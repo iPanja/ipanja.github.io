@@ -174,7 +174,7 @@ input:checked + .slider:before {
 	[General Stuff]
 */
 header.major{
-	margin: 0 0 1em 0;
+	margin: 2em 0 1em 0;
 }
 header.major a:hover{
 	color: var(--pink);
@@ -233,14 +233,19 @@ section#contact div#contact-info{
 	display: flex;
 }
 section#contact div#contact-info i{
-	font-size: 1.4em;
+	font-size: 1.2em;
 }
 section#contact div#contact-info span{
 	font-size: 18px;
 }
 section#contact div#contact-info p{
-	font-size: 16px;
+	font-size: 0.9em;
 	margin: 2px 0 0 0;
+}
+
+section#contact p {
+	color: var(--text-gray);
+	font-size: 0.9em;
 }
 /*
 	[Experiences]
