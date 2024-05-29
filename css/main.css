@@ -253,6 +253,10 @@ section#contact p {
 .experiences > div:not(:last-of-type){
 	margin-bottom: 40px;
 }
+.experiences .subtext{
+	font-size: 0.9em;
+}
+
 .experience > div:last-of-type p{
 	max-width: 750px;
 }
