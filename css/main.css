@@ -328,6 +328,67 @@ section#contact > p {
 	font-size: 14px;
 }
 
+.experience-position {
+	margin-top: 14px;
+}
+
+.experience-position + .experience-position {
+	margin-top: 20px;
+	padding-top: 16px;
+	border-top: 1px solid var(--line);
+}
+
+.experience-position-heading {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 8px 16px;
+}
+
+.experience-position-heading h4 {
+	margin: 0;
+	color: var(--ink);
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.experience-position-heading span {
+	color: var(--muted);
+	font-size: 13px;
+	text-align: right;
+}
+
+.experience-position ul {
+	margin-top: 6px;
+}
+
+.earlier-experience {
+	margin-top: 28px;
+	padding-top: 18px;
+	border-top: 1px solid var(--line);
+}
+
+.earlier-experience summary {
+	color: var(--blue);
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.earlier-experience summary span {
+	margin-left: 6px;
+	color: var(--muted);
+	font-weight: 400;
+}
+
+.earlier-experience .experience {
+	margin-top: 22px;
+}
+
+.earlier-experience .experience + .experience {
+	margin-top: 28px;
+}
+
 .experience > div > p,
 .experience div p,
 .experience li {
@@ -366,23 +427,25 @@ section#contact > p {
 	padding-left: 20px;
 }
 
-#skills.experience > div > h3 {
-	display: block;
-	margin: 18px 0 2px;
-	color: var(--navy);
+.skill-rows {
+	display: grid;
+	gap: 8px;
+}
+
+.skill-row {
+	margin: 0;
 	font-size: 14px;
+	line-height: 1.55;
 }
 
-:root[data-theme="dark"] #skills.experience > div > h3 {
+.skill-row strong {
+	margin-right: 6px;
+	color: var(--navy);
+	font-weight: 700;
+}
+
+:root[data-theme="dark"] .skill-row strong {
 	color: var(--bright-blue);
-}
-
-#skills.experience > div > h3:first-child {
-	margin-top: 0;
-}
-
-#skills ul {
-	margin-top: 4px;
 }
 
 /* Project rows keep the original lightweight markup and assets. */
@@ -504,6 +567,21 @@ section#contact > p {
 
 	#nav.responsive a.right {
 		margin-left: 0;
+	}
+
+	.experience-position-heading {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 1px;
+	}
+
+	.experience-position-heading span {
+		text-align: left;
+	}
+
+	.earlier-experience summary span {
+		display: block;
+		margin: 3px 0 0 20px;
 	}
 
 	.wrapper {

@@ -22,4 +22,14 @@ The nav toggle is `responsiveNav()` in `js/script.js`; its `responsive` class co
 
 ## Content maintenance
 
-Resume and project content is currently maintained directly in HTML and is duplicated in places. Before changing resume facts, compare `index.html` with `Resume.pdf` and confirm which version is authoritative. The project entries are also repeated between the home and projects pages, so keep those copies aligned when editing them.
+Resume and project content is maintained directly in HTML and is duplicated in places. The primary Experience and Education entries on the home page reflect `/home/fletcher/Documents/Resumes/FH_USA_Resume.tex`. The Skills section extends that resume with additional frameworks and confirmed Linux, Docker networking, DevContainer, and homelab experience. Earlier Cerberus Capital Management and MT Soccer Club experience is kept in a native collapsed disclosure below the current resume entries. Project entries are repeated between the home and projects pages, so keep those copies aligned when editing them.
+
+The repository's `Resume.pdf` has been replaced with `/home/fletcher/Documents/Resumes/FH_USA_Resume.pdf`. The PDF's header still uses old comcast email, while the website uses `contact@lo49.dev`.
+
+## Suggested follow-up
+
+- **Align contact details if desired.** The updated PDF has old comcast email; the website uses `contact@lo49.dev`.
+- **Review the projects and achievements for relevance.** They include older work not present in the newest resume. Keep the website's broader portfolio if those projects still represent work Fletcher wants to feature; otherwise prioritize a short set of current, technically representative projects.
+- **Consider removing the Font Awesome CDN dependency.** The site uses a small set of icons; inline SVG or simple text symbols could keep the design while reducing external dependencies.
+
+Prefer concise role and accomplishment descriptions over a company-logo strip. Logos use space without explaining Fletcher's contribution, while the text treatment fits the lightweight resume layout.
