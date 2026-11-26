@@ -476,6 +476,7 @@ section#contact > p {
 	}
 
 	#nav.responsive a {
+		display: block;
 		width: 100%;
 		padding: 12px 0;
 		text-align: left;
