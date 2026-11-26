@@ -1,6 +1,11 @@
 function responsiveNav() {
   const nav = document.getElementById("nav");
-  nav.classList.toggle("responsive");
+  const menuToggle = nav.querySelector(".icon");
+  const isExpanded = nav.classList.toggle("responsive");
+
+  menuToggle.setAttribute("aria-expanded", String(isExpanded));
+  menuToggle.setAttribute("aria-label", isExpanded ? "Close navigation menu" : "Open navigation menu");
+  menuToggle.textContent = isExpanded ? "×" : "☰";
 }
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');

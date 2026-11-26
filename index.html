@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title>Fletcher Henneman</title>
 		<link rel="stylesheet" href="css/main.css"/>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 	</head>
 	<body data-theme="">
 	<!-- Navigation -->
@@ -21,9 +20,18 @@
 			<input type="checkbox" id="checkbox" aria-label="Toggle dark mode"/>
 			<div class="slider round"></div>
 			</label>
-			<p><i class="fas fa-moon"></i></p>
+			<svg class="theme-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+				<defs>
+					<clipPath id="theme-half" clipPathUnits="userSpaceOnUse">
+						<rect x="3" y="3" width="9" height="18"/>
+					</clipPath>
+				</defs>
+				<circle cx="12" cy="12" r="9" fill="currentColor" clip-path="url(#theme-half)"/>
+				<circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/>
+				<path d="M12 3v18" fill="none" stroke="currentColor" stroke-width="1.5"/>
+			</svg>
 		</div>
-		<a href="javascript:void(0);" class="icon" onclick="responsiveNav()"><i class="fa fa-bars"></i></a>
+		<button class="icon" type="button" aria-label="Open navigation menu" aria-expanded="false" onclick="responsiveNav()">☰</button>
 	</div>
 	<!-- Content -->
 	<section id="main" class="wrapper resume">
@@ -34,11 +42,11 @@
 				</header>
 				<p>Senior Software Engineer <b>@ Capital One</b></p>
 				<div id="contact-info">
-					<div><a href="https://github.com/iPanja/"><i class="fab fa-github"></i></a></div>
+					<div><a class="contact-link" href="https://github.com/iPanja/">GitHub</a></div>
 					<div><span class="separator">|</span></div>
-					<div><p><a class="underline" href="Resume.pdf">Resume</a></p></div>
+					<div><a class="contact-link" href="Resume.pdf">Resume</a></div>
 					<div><span class="separator">|</span></div>
-					<div><p>Email: <a class="underline" href="mailto:contact@lo49.dev">contact@lo49.dev</a></p></div>
+					<div><a class="contact-link" href="mailto:contact@lo49.dev">contact@lo49.dev</a></div>
 				</div>
 				
 			</section>
@@ -156,31 +164,6 @@
 				</div>
 			</section>
 			
-			<section id="achievements" class="experiences">
-				<h3>ACHIEVEMENTS</h3>
-				<div class="experience">
-					<header>
-						<h3>Hershey Hackathon</h3>
-					</header>
-					<div>
-						<p><i class="fas fa-trophy"></i> 2nd Place</p>
-					</div>
-					<div>
-						<p>Created a new Schoology app (C#/Unity) and a custom API derived from web scraping Schoology's website as their API is not public (PHP). <a class="underline" href="https://hackhershey-2019.devpost.com/">DevPost</a></p>
-					</div>
-				</div>
-				<div class="experience">
-					<div>
-						<h3>Pennsylvania Technology Student Association - Software Design</h3>
-					</div>
-					<div>
-						<p><i class="fas fa-trophy"></i> 4th Place</p>
-					</div>
-					<div>
-						<p>Developed a bot for an instant messaging application, Discord. You can play games such as Blackjack, Connect 4, or play music and get day to day information such as the weather all through the chat interface. <a class="underline" href="https://github.com/iPanja/Redux-Bot">GitHub</a></p>
-					</div>
-				</div>
-			</section>
 			<section id="skills" class="skills-list">
 				<h3>SKILLS</h3>
 				<div class="skill-rows">
@@ -198,12 +181,12 @@
 				<div class="project">
 					<img src="images/Gameboy.png"/>
 					<div class="experience">
-						<div class="header-icon">
+						<div class="project-heading">
 							<h3>Gameboy (DMG-01) Emulator</h3>
-							<a href="https://github.com/iPanja/gameboy-rust"><i class="fab fa-github"></i></a>
+							<a href="https://github.com/iPanja/gameboy-rust">GitHub ↗</a>
 						</div>
 						<div>
-							<p><i class="fas fa-code"></i> Rust</p>
+							<p><span class="project-meta-label">Stack</span> Rust</p>
 						</div>
 						<div>
 							<p>A semi-cycle-accurate emulator written in Rust. Can currently play ROMs such as Tetris, Kirby's Dream Land, and Super Mario Land!</p>
@@ -213,12 +196,12 @@
 				<div class="project">
 					<img src="images/EI.jpg"/>
 					<div class="experience">
-						<div class="header-icon">
+						<div class="project-heading">
 							<h3>Everwyn Idle</h3>
-							<a href="https://github.com/iPanja/EverwynIdle"><i class="fab fa-github"></i></a>
+							<a href="https://github.com/iPanja/EverwynIdle">GitHub ↗</a>
 						</div>
 						<div>
-							<p><i class="fas fa-code"></i> Swift, JavaScript</p>
+							<p><span class="project-meta-label">Stack</span> Swift, JavaScript</p>
 						</div>
 						<div>
 							<p>An idle dungeon-clearing game for iOS, along with a Node.js server to enable multiplayer functionality.</p>
@@ -228,12 +211,12 @@
 				<div class="project">
 					<img src="images/Moon.png"/>
 					<div class="experience">
-						<div class="header-icon">
+						<div class="project-heading">
 							<h3>Steam Idler</h3>
-							<a href="https://github.com/iPanja/steam-idler"><i class="fab fa-github"></i></a>
+							<a href="https://github.com/iPanja/steam-idler">GitHub ↗</a>
 						</div>
 						<div>
-							<p><i class="fas fa-code"></i> C, GTK3 Framework</p>
+							<p><span class="project-meta-label">Stack</span> C, GTK3 Framework</p>
 						</div>
 						<div>
 							<p>Automatically scans your steam library to idle games in the background for card drops and hours played.</p>
@@ -247,7 +230,7 @@
 							<h3>LE Tryouts</h3>
 						</div>
 						<div>
-							<p><i class="fas fa-code"></i> HTML, CSS, Javascript, PHP, SQL</p>
+							<p><span class="project-meta-label">Stack</span> HTML, CSS, Javascript, PHP, SQL</p>
 						</div>
 						<div>
 							<p>Soccer tryout platform, facilitates over 300+ players a year with thousands of evaluations. <a class="underline" href="https://letryouts.com">LETryouts.com</a></p>

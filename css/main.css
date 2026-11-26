@@ -132,8 +132,23 @@ a {
 	margin-left: 2px;
 }
 
-#nav a.icon {
+#nav .icon {
 	display: none;
+}
+
+#nav button.icon {
+	border: 0;
+	padding: 0;
+	background: transparent;
+	color: var(--navy);
+	font: inherit;
+	font-size: 21px;
+	line-height: 1;
+	cursor: pointer;
+}
+
+:root[data-theme="dark"] #nav button.icon {
+	color: var(--ink);
 }
 
 .theme-switch-wrapper {
@@ -144,8 +159,11 @@ a {
 	margin-left: 12px;
 }
 
-.theme-switch-wrapper p {
-	margin: 0;
+.theme-icon {
+	display: block;
+	width: 17px;
+	height: 17px;
+	flex: 0 0 17px;
 	color: var(--muted);
 }
 
@@ -267,15 +285,6 @@ section#contact > p {
 	margin: 0;
 }
 
-#contact-info p {
-	margin: 0;
-	font-size: 14px;
-}
-
-#contact-info i {
-	font-size: 18px;
-}
-
 #contact-info .separator {
 	color: var(--line);
 }
@@ -285,8 +294,12 @@ section#contact > p {
 	text-decoration: none;
 }
 
-.resume a.underline {
+.resume a.contact-link {
+	display: inline-block;
 	border-bottom: 1px solid rgba(60, 112, 171, 0.42);
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1.4;
 }
 
 .resume a:hover,
@@ -419,10 +432,6 @@ section#contact > p {
 	color: var(--bright-blue);
 }
 
-.experience i.fa-trophy {
-	color: var(--blue);
-}
-
 .experience ul > ul {
 	padding-left: 20px;
 }
@@ -483,16 +492,30 @@ section#contact > p {
 	padding-top: 2px;
 }
 
-.project .header-icon {
+.project .project-heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
 	margin: 0;
 }
 
-.project .header-icon h3 {
+.project .project-heading h3 {
 	margin: 0;
 }
 
-.project .header-icon a {
-	margin-left: 8px;
+.project .project-heading a {
+	flex-shrink: 0;
+	font-size: 13px;
+}
+
+.project-meta-label {
+	margin-right: 6px;
+	color: var(--muted);
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
 }
 
 .project .experience > div > p {
@@ -517,11 +540,19 @@ section#contact > p {
 		display: none;
 	}
 
-	#nav a.icon {
-		display: block;
+	#nav button.icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 44px;
+		min-height: 56px;
 		margin-left: auto;
-		padding-right: 0;
+		padding: 0;
 		color: var(--navy);
+	}
+
+	:root[data-theme="dark"] #nav button.icon {
+		color: var(--ink);
 	}
 
 	#nav.responsive {
@@ -531,11 +562,11 @@ section#contact > p {
 		padding-bottom: 12px;
 	}
 
-	#nav.responsive a.icon {
+	#nav.responsive button.icon {
 		position: absolute;
 		top: 0;
 		right: 18px;
-		width: auto;
+		width: 44px;
 	}
 
 	#nav.responsive a {

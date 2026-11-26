@@ -14,7 +14,6 @@
 
 		<link rel="stylesheet" href="css/main.css"/>
 
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
 	</head>
 
@@ -44,11 +43,20 @@
 
 			</label>
 
-			<p><i class="fas fa-moon"></i></p>
+			<svg class="theme-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24">
+				<defs>
+					<clipPath id="theme-half" clipPathUnits="userSpaceOnUse">
+						<rect x="3" y="3" width="9" height="18"/>
+					</clipPath>
+				</defs>
+				<circle cx="12" cy="12" r="9" fill="currentColor" clip-path="url(#theme-half)"/>
+				<circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/>
+				<path d="M12 3v18" fill="none" stroke="currentColor" stroke-width="1.5"/>
+			</svg>
 
 		</div>
 
-		<a href="javascript:void(0);" class="icon" onclick="responsiveNav()"><i class="fa fa-bars"></i></a>
+		<button class="icon" type="button" aria-label="Open navigation menu" aria-expanded="false" onclick="responsiveNav()">☰</button>
 
 	</div>
 
@@ -62,13 +70,13 @@
 				<header class="major name">
 					<h1>FLETCHER HENNEMAN</h1>
 				</header>
-				<p>Software Engineering Associate <b>@ Capital One</b></p>
+				<p>Senior Software Engineer <b>@ Capital One</b></p>
 				<div id="contact-info">
-					<div><a href="https://github.com/iPanja/"><i class="fab fa-github"></i></a></div>
+					<div><a class="contact-link" href="https://github.com/iPanja/">GitHub</a></div>
 					<div><span class="separator">|</span></div>
-					<div><p><a class="underline" href="Resume.pdf">Resume</a></p></div>
+					<div><a class="contact-link" href="Resume.pdf">Resume</a></div>
 					<div><span class="separator">|</span></div>
-					<div><p>Email: <a class="underline" href="mailto:contact@lo49.dev">contact@lo49.dev</a></p></div>
+					<div><a class="contact-link" href="mailto:contact@lo49.dev">contact@lo49.dev</a></div>
 				</div>
 				
 			</section>
@@ -79,12 +87,12 @@
 				<div class="project">
 					<img src="images/Gameboy.png"/>
 					<div class="experience">
-						<div class="header-icon">
+						<div class="project-heading">
 							<h3>Gameboy (DMG-01) Emulator</h3>
-							<a href="https://github.com/iPanja/gameboy-rust"><i class="fab fa-github"></i></a>
+							<a href="https://github.com/iPanja/gameboy-rust">GitHub ↗</a>
 						</div>
 						<div>
-							<p><i class="fas fa-code"></i> Rust</p>
+							<p><span class="project-meta-label">Stack</span> Rust</p>
 						</div>
 						<div>
 							<p>A semi-cycle-accurate emulator written in Rust. Can currently play ROMs such as Tetris, Kirby's Dream Land, and Super Mario Land!</p>
@@ -94,12 +102,12 @@
 				<div class="project">
 					<img src="images/EI.jpg"/>
 					<div class="experience">
-						<div class="header-icon">
+						<div class="project-heading">
 							<h3>Everwyn Idle</h3>
-							<a href="https://github.com/iPanja/EverwynIdle"><i class="fab fa-github"></i></a>
+							<a href="https://github.com/iPanja/EverwynIdle">GitHub ↗</a>
 						</div>
 						<div>
-							<p><i class="fas fa-code"></i> Swift, JavaScript</p>
+							<p><span class="project-meta-label">Stack</span> Swift, JavaScript</p>
 						</div>
 						<div>
 							<p>An idle dungeon-clearing game for iOS, along with a Node.js server to enable multiplayer functionality.</p>
@@ -112,17 +120,17 @@
 
 					<div class="experience">
 
-						<div class="header-icon">
+						<div class="project-heading">
 
 							<h3>Steam Idler</h3>
 
-							<a href="https://github.com/iPanja/steam-idler"><i class="fab fa-github"></i></a>
+							<a href="https://github.com/iPanja/steam-idler">GitHub ↗</a>
 
 						</div>
 
 						<div>
 
-							<p><i class="fas fa-code"></i> C, GTK3 Framework</p>
+							<p><span class="project-meta-label">Stack</span> C, GTK3 Framework</p>
 
 						</div>
 
@@ -142,17 +150,17 @@
 
 					<div class="experience">
 
-						<div class="header-icon">
+						<div class="project-heading">
 
 							<h3>PokeShowdown</h3>
 
-							<a href="https://github.com/iPanja/PokeShowdown"><i class="fab fa-github"></i></a>
+						<a href="https://github.com/iPanja/PokeShowdown">GitHub ↗</a>
 
 						</div>
 
 						<div>
 
-							<p><i class="fas fa-code"></i> Java, Python</p>
+							<p><span class="project-meta-label">Stack</span> Java, Python</p>
 
 						</div>
 
@@ -180,7 +188,7 @@
 
 						<div>
 
-							<p><i class="fas fa-code"></i> HTML, CSS, Javascript, PHP, SQL</p>
+							<p><span class="project-meta-label">Stack</span> HTML, CSS, Javascript, PHP, SQL</p>
 
 						</div>
 
@@ -200,17 +208,17 @@
 
 					<div class="experience">
 
-						<div class="header-icon">
+						<div class="project-heading">
 
 							<h3>Auto League Client</h3>
 
-							 <a href="https://github.com/iPanja/ALC"><i class="fab fa-github"></i></a>
+							 <a href="https://github.com/iPanja/ALC">GitHub ↗</a>
 
 						</div>
 
 						<div>
 
-							<p><i class="fas fa-code"></i> C#, .NET Framework</p>
+							<p><span class="project-meta-label">Stack</span> C#, .NET Framework</p>
 
 						</div>
 
@@ -230,23 +238,23 @@
 
 					<div class="experience">
 
-						<div class="header-icon">
+						<div class="project-heading">
 
 							<h3>Redux</h3>
 
-							<a href="https://github.com/iPanja/Redux-Bot"><i class="fab fa-github"></i></a>
+						<a href="https://github.com/iPanja/Redux-Bot">GitHub ↗</a>
 
 						</div>
 
 						<div>
 
-							<p><i class="fas fa-code"></i> Python</p>
+							<p><span class="project-meta-label">Stack</span> Python</p>
 
 						</div>
 
 						<div>
 
-							<p>A discord bot written in Python. Placed 4th in the Pennsylvania TSA competition for Software Development. You can play games such as Blackjack, Connect 4, or play music and get day to day information such as the weather all through the chat interface.</p>
+							<p>A Discord bot written in Python with games such as Blackjack and Connect 4, music playback, and day-to-day information like the weather.</p>
 
 						</div>
 
